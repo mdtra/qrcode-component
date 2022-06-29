@@ -51,6 +51,7 @@ body {
 
 .attribution {
     text-align: center;
+    font-size: 11px;
 }
 
 @media (max-width: 375px) {
