@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
+:root {
+    --font-main: 'Outfit', sans-serif;;
+    --color-main-bg: hsl(212, 45%, 89%);
+    --color-card-bg: white;
+    --color-card-title: hsl(218, 44%, 22%);
+    --color-card-text: hsl(220, 15%, 55%);
+}
+
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--font-main);
     font-size: 15px;
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--color-main-bg);
 }
 
 .card-qrcode {
@@ -16,7 +24,7 @@ body {
     flex-flow: column wrap;
     max-width: 285px;
     
-    background-color: white;
+    background-color: var(--color-card-bg);
     border-radius: 20px;
     box-shadow: 0 0 1em hsla(219, 15%, 55%, 0.158);
 }
@@ -41,12 +49,12 @@ body {
 
 .div-info > h1 {
     font-size: 22px;
-    color: hsl(218, 44%, 22%);
+    color: var(--color-card-title);
 }
 
 .div-info > p {
     font-weight: 400;
-    color: hsl(220, 15%, 55%);
+    color: var(--color-card-text);
 }
 
 .attribution {
